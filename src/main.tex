@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+
+\usepackage[a5paper,margin=10mm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\setmainfont{triodion-ieUcs.ttf}[Path=assets/fonts/]
+\providecommand{\texorpdfstring}[2]{#1}
+\definecolor{textbfcolor}{HTML}{E50000}
+\definecolor{headingcolor}{HTML}{6B4F38}
+\renewcommand{\textbf}[1]{{\color{textbfcolor}#1}}
+
+\titleformat{\section}
+  {\centering\color{headingcolor}\fontsize{20pt}{24pt}\selectfont}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\section}{0pt}{0.8em}{0.45em}
+
+\titleformat{\subsection}
+  {\centering\color{headingcolor}\fontsize{16pt}{20pt}\selectfont}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\subsection}{0pt}{0.7em}{0.35em}
+
+\titleformat{\subsubsection}
+  {\centering\color{headingcolor}\fontsize{13pt}{17pt}\selectfont}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\subsubsection}{0pt}{0.6em}{0.3em}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\setcounter{secnumdepth}{0}
+\raggedbottom
+\setlength{\lineskip}{0pt}
+\setlength{\lineskiplimit}{-1000pt}
+
+\begin{document}
+\pagestyle{empty}
+\sloppy
+\fontsize{14pt}{17pt}\selectfont
+\input{src/content.tex}
+\end{document}
