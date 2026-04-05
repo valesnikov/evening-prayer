@@ -5,6 +5,8 @@
 \usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
 
 \setmainfont{triodion-ieUcs.ttf}[Path=assets/fonts/]
 
@@ -60,4 +62,16 @@
 \sloppy
 \fontsize{14pt}{17pt}\selectfont
 \input{src/content.tex}
+
+\vfill
+{%
+\translationfont\fontsize{5pt}{7pt}\selectfont
+\setlength{\parskip}{0pt}
+\noindent\rule{\linewidth}{0.4pt}\par
+\vspace{0.35em}
+\noindent\hspace*{2em}Источники: \par
+\noindent\hspace*{2em}Церковнославянский - \url{https://azbyka.ru/molitvoslov/molitvy-na-son-grjadushhim-cerkovnoslavjanskim-shriftom.html}\par
+\noindent\hspace*{2em}Перевод - \url{https://azbyka.ru/molitvoslov/molitvy-na-son-gryadushhim-bez-tolkovanij.html}\par
+}
+
 \end{document}
