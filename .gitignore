@@ -1,9 +1,9 @@
-build/
 *.aux
 *.log
 *.out
 *.toc
 *.fls
+*.pdf
 *.fdb_latexmk
 *.xdv
 *.synctex.gz
