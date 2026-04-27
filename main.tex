@@ -9,6 +9,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{microtype}
+\usepackage{pdfrender}
 \urlstyle{same}
 
 \hypersetup{
@@ -73,6 +74,17 @@
 \begin{document}
 \pagestyle{empty}
 \sloppy
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \vspace*{13em}
+  {\centering\color{headingcolor}\fontsize{50pt}{60pt}\selectfont\textpdfrender{
+      TextRenderingMode=Stroke,
+      StrokeColor=gray!30,
+      LineWidth=0.5pt
+    }{Мlтвы на с0нъ грzдyщымъ.}\par}
+\end{titlepage}
+
 \fontsize{14pt}{17pt}\selectfont
 \input{content.tex}
 
